@@ -1,0 +1,35 @@
+{
+  "name": "projectforge-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ProjectForge API (Express 5 + MongoDB)",
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "seed:skills": "node src/seeds/run.js skills",
+    "seed:admin": "node src/seeds/run.js admin"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.1",
+    "morgan": "^1.12.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.2.0",
+    "supertest": "^7.2.2",
+    "vitest": "^5.0.1"
+  }
+}
